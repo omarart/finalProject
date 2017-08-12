@@ -1,0 +1,145 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+    padding: 150px;
+    padding-top: 30px;
+}
+
+
+.header .fa {
+    font-size: 8em;
+    color: #02b3e4 ;
+    float: left;
+}
+
+.header .text-header{
+    float: right ;
+}
+.big-image img {
+    width: 100%;
+    height: 600px;
+
+}
+
+.hr {
+    height: 3px;
+    clear: both ;
+    background-color: #7d97ad;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.featured {
+    display: flex ;
+    flex-wrap: wrap ;
+    width: 100%;
+}
+
+ h2 {
+     margin-top: 20px;
+    color: #7d97ad ;
+}
+
+.flex-item {
+    width: 33%;
+    padding-left:4px; 
+    /* margin: 30px; */
+    margin-top: 10px;
+    /* border: 1px solid #7d97ad; */
+    text-align: center ;
+}
+
+.featured  img{
+    max-width: 100%;
+    max-height: 13em;
+}
+
+picture#banner img {
+  -webkit-filter: saturate(3) opacity(0.7);
+  margin: 0 0 2em 0;
+  max-width: 100vw;
+  width: 100vw;
+}
+
+/* Ipad pro  */
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 80px;
+    }
+  .flex-item p  {
+    font-size: .5em;
+    }    
+  .featured img {
+    max-height: 11em;
+    }
+    .big-image img {
+        height: inherit;
+    }
+    .header .fa {
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 40px;
+    }
+  .flex-item p  {
+    font-size: 5px;
+    }    
+  .featured img {
+    max-height: 8em;
+    }
+    .big-image img {
+        height: inherit;
+    }
+    .header .fa {
+        font-size: 6em;
+    }
+}
+
+/* Nexus  */
+@media screen and (max-width: 412px) {
+    body {
+        padding: 30px;
+        text-align: center;
+    }
+  .flex-item p  {
+    font-size: 1em;
+    }    
+
+  .featured img {
+    max-height: 9em;
+    max-width: 100%;
+    }
+    .header .fa{
+        float: none;
+    }
+    .header .text-header{
+        float: none;
+    }
+
+    .flex-item {
+        width: 100%;
+        padding-left:4px; 
+        /* margin: 30px; */
+        margin-top: 10px;
+        /* border: 1px solid #7d97ad; */
+        text-align: center ;
+}
+    .big-image img {
+        height: inherit;
+    }
+    .header .fa {
+        font-size: 6em;
+    } 
+}
