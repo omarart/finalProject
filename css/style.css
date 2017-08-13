@@ -26,7 +26,7 @@ body {
 }
 .big-image img {
     width: 100%;
-    height: 600px;
+    height: auto;
 
 }
 
@@ -63,13 +63,6 @@ body {
     max-height: 13em;
 }
 
-picture#banner img {
-  -webkit-filter: saturate(3) opacity(0.7);
-  margin: 0 0 2em 0;
-  max-width: 100vw;
-  width: 100vw;
-}
-
 /* Ipad pro  */
 @media screen and (max-width: 1024px) {
     body {
@@ -82,7 +75,7 @@ picture#banner img {
     max-height: 11em;
     }
     .big-image img {
-        height: inherit;
+        height: auto;
     }
     .header .fa {
         font-size: 6em;
@@ -100,7 +93,7 @@ picture#banner img {
     max-height: 8em;
     }
     .big-image img {
-        height: inherit;
+        height: auto;
     }
     .header .fa {
         font-size: 6em;
@@ -137,7 +130,7 @@ picture#banner img {
         text-align: center ;
 }
     .big-image img {
-        height: inherit;
+        height: auto;
     }
     .header .fa {
         font-size: 6em;
